@@ -12,6 +12,10 @@
 
 - Polimorfismo: DInamismo para trabalhar chamadas com comportamentos diferentes
 
+**Constructor**
+
+- Construtor é um mecanismo que permite fazer inicializações no objeto assim que ele é declarado com o new, caso não seja passado é utilizado o construtor padrão(que não tem nenhum parametro). Um bom motivo é colocar no construtor, parametros que queremos que seja obrigatorios. No exemplo do express , dentro do constructor nós iniciamos as rotas/middlewares etc.
+
 **Vantages**
 
 - Prática de programação
