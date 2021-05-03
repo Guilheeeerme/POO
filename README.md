@@ -10,6 +10,12 @@
 
 - Herança: Reutilizar código
 
+  - Superclasses e subclasses.
+  - Princípio que permite criar uma nova subclasse a partir de uma já existente (superclasse), utilizando a palavra `extends`, ela vai conter atributos e métodos da qual deriva.
+  - TypeScript não permite herança múltipla , e isso é bom.
+  - O `super` deve ser passado no constructor da subclasse, e ele chama a superclasse, caso a superclasse tenha parametro, o parametro passado no `super` da subclasse é enviado para a superclasse.
+  - Caso queria que nenhuma classe possa derivar da sua classe, é só definir seu constructor como private.
+
 - Polimorfismo: Dinamismo para trabalhar chamadas com comportamentos diferentes
 
 **Constructor**
@@ -33,7 +39,7 @@
 
 - Private (#):
   - Utilizada sempre que possível.
-  - Torna a visibilidade apenas local (mesmo arquivo, apenas para a classe em si), tornando invisível para outras classes.
+  - Torna a visibilidade apenas local (mesmo arquivo, apenas para a classe em si), tornando invisível para outras classes, caso precise, pegar/modificar via get e set.
   - Atributos normalmente são privados.
   - Métodos que implementam rotinas internas (métodos auxiliares (helpers)) devem ser privados.
   - Geralmente no momento que nomear colocamos um underline antes da primeira letra, por convenção.
@@ -65,3 +71,8 @@ Obs: Crio o atributo privado e depois crio método para acessar e modificar!? Ma
 - Segurança
 - Reutilização de código
 - Fácil manutenção
+
+**Método STATIC** Por definição, um atributo ou método estático é aquele que não requer uma instância para ser utilizado. Isso quer dizer que um método estático, como no seu exemplo, pode ser executado livremente sem a necessidade de instanciação de um objeto.
+
+- Nao é recomendado utilizar em tudo, uma boa ideia é em arquivos de Utilizades UTIL, ou por exemplo aqueles tratamento de erro que eu crio a classe, e depois crio outra subclasse (com seu método static) pra ter um erro mais especifico, e chamar la no throw AppError sem precisar instanciar....
+- O padrão Singleton utiliza muito.
