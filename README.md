@@ -76,3 +76,15 @@ Obs: Crio o atributo privado e depois crio método para acessar e modificar!? Ma
 
 - Nao é recomendado utilizar em tudo, uma boa ideia é em arquivos de Utilizades UTIL, ou por exemplo aqueles tratamento de erro que eu crio a classe, e depois crio outra subclasse (com seu método static) pra ter um erro mais especifico, e chamar la no throw AppError sem precisar instanciar....
 - O padrão Singleton utiliza muito.
+
+**Método ABSTRACT**
+
+- Só pode estar em classe abastrata
+- Para poder chamar um método com polimorfismo, a classe onde tem o método deve ser abastrata, porque método abstrato precisa necessiamente de uma classe abastrata
+
+**Classe abastrata** É conhecida como classe incompleta porque ela não pode ser instanciada;
+
+- Seus métodos podem ser acessados mesmo sem ela ter sido instanciada, chamamos a classe e o método,`Classe.metodo()`;
+- Aparentemente métodos estáticos necessitam que a classe seja abstrata;
+- As classes que estenderem dela, poderão ser instanciadas normalmente;
+- **_As demais classe que não são abstratas são chamadas de concretas/completas_**
