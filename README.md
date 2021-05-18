@@ -17,6 +17,8 @@
   - Caso queria que nenhuma classe possa derivar da sua classe, é só definir seu constructor como private.
 
 - Polimorfismo: Dinamismo para trabalhar chamadas com comportamentos diferentes
+  - O principal conceito de duas ou mais classes derivadas de uma mesma **superclasse** responderem a mesma mensagem, cada uma de uma forma diferente. Ocorre quando uma **subclasse** redefine um método existente na superclasse, ou seja, quando temos **métodos sobrescritos (overriding)**
+  - Exemplo, temos a **superclasse Mamífero** que tem o método locomoverSe(), e temos as **subclasses Macaco, homem, baleia** todas essas subclasses terão o método locomoverSe(), e cada uma resultará em uma mensagem diferente, (pulando de galho em galho para Macaco), (andando para Homem) e (nadando para Baleia).
 
 **Constructor**
 
