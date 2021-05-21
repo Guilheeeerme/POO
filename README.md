@@ -83,6 +83,7 @@ Obs: Crio o atributo privado e depois crio método para acessar e modificar!? Ma
 
 - Só pode estar em classe abastrata
 - Para poder chamar um método com polimorfismo, a classe onde tem o método deve ser abastrata, porque método abstrato precisa necessiamente de uma classe abastrata
+- Método abstrato não tem corpo, a subclasse vai definir o que o métoro irá realiza ali para ela.
 
 **Classe abastrata** É conhecida como classe incompleta porque ela não pode ser instanciada;
 
